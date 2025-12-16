@@ -7,6 +7,9 @@ redirect_from:
   - /resume
 ---
 
+
+<meta http-equiv="refresh" content="0; url=/files/cv.pdf" />
+<p>If you are not redirected, <a href="/files/cv.pdf">click here to view the PDF CV</a>.</p>
 {% include base_path %}
 
 Education
