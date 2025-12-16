@@ -40,7 +40,6 @@ author_profile: true
         <span class="pub-venue">{{ post.venue }}</span>
         <div class="pub-buttons">
           {% if post.paperurl %}<a class="pub-btn" href="{{ post.paperurl }}" target="_blank">PDF</a>{% endif %}
-          {% if post.bibtexurl %}<a class="pub-btn" href="{{ post.bibtexurl }}" target="_blank">Cite</a>{% endif %}
         </div>
       </div>
     {% endfor %}
@@ -67,7 +66,7 @@ author_profile: true
   color: #2196f3;
   font-size: 1.13em;
   font-weight: 500;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .pub-venue {
   font-size: 1em;
@@ -87,7 +86,7 @@ author_profile: true
   font-size: 0.98em;
   margin-right: 7px;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: background 0.2s;
 }
 .pub-btn:hover {
@@ -98,7 +97,7 @@ author_profile: true
 }
 </style>
 
-{% assign my_names = "Truong Vo, Vo Truong Quang, Truong Quang Vo, Vo, T. Q., T. Q. Vo, Truong Q. Vo, Vo, Truong Q." | split: ", " %}
+{% assign my_names = "Truong Vo" | split: ", " %}
 
 
 
