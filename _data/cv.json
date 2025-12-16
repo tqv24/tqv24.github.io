@@ -1,68 +1,129 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Truong Quang Vo",
+    "email": "voquangtruong152000@gmail.com",
+    "phone": "(+1) 267-808-5852",
+    "website": "https://tqv24.github.io",
+    "summary": "PhD student in Machine Learning at Northwestern University specializing in LLM evaluation, alignment, and efficient training. Passionate about developing trustworthy AI systems and advancing scalable machine learning algorithms.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Evanston",
       "countryCode": "US",
-      "region": ""
+      "region": "Illinois"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "tqv24",
+        "url": "https://github.com/tqv24"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "Sabre Holdings",
+      "position": "AI Engineer Intern",
+      "startDate": "2025-09-01",
+      "endDate": "2025-12-15",
+      "summary": "Developed multi-agent AI systems and personalized travel recommendation engines",
+      "highlights": [
+        "Developed multi-agent AI system with AutoGen for personalized air travel recommender",
+        "Integrated SendGrid API for automated communication and end-to-end recommendation pipeline"
+      ]
+    },
+    {
+      "name": "Mintel Group",
+      "position": "Applied AI Intern",
+      "startDate": "2024-09-01",
+      "endDate": "2025-05-31",
+      "summary": "Developed AI workflows and agentic RAG systems for market analytics",
+      "highlights": [
+        "Led development of AI workflow using LangGraph for deep analysis of global F&B market",
+        "Built agentic retrieval-augmented generation (RAG) system with Pinecone vector database",
+        "Developed analytic agent for SQL querying and trend detection across 20 GB of data"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "Northwestern University",
+      "area": "M.S. in Machine Learning and Data Science",
+      "studyType": "Master of Science",
+      "startDate": "2023-09-01",
+      "endDate": "2025-12-31",
+      "gpa": "3.98/4.0",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "Drexel University",
+      "area": "B.S. in Chemical Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2019-09-01",
+      "endDate": "2023-09-30",
+      "gpa": "3.77/4.0",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "keywords": [
+        "Large Language Models",
+        "Supervised Fine-tuning",
+        "Reinforcement Learning (RLHF)",
+        "Neural Networks",
+        "Deep Learning"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "SQL",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "AI & LLM Tools",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow",
+        "Hugging Face",
+        "LangGraph",
+        "LLM Alignment",
+        "Evaluation Frameworks"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "keywords": [
+        "Apache Spark",
+        "Vector Databases (Pinecone)",
+        "RAG Systems",
+        "Data Pipelines"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "LLM Evaluation",
+      "keywords": ["benchmark design", "evaluation frameworks", "cultural understanding", "reasoning evaluation"]
+    },
+    {
+      "name": "Synthetic Data Generation",
+      "keywords": ["data augmentation", "rare condition modeling", "clinical data", "instruction tuning"]
+    },
+    {
+      "name": "Efficient Machine Learning",
+      "keywords": ["distributed training", "boosting algorithms", "model optimization", "scalability"]
+    },
+    {
+      "name": "Trustworthy AI",
+      "keywords": ["model alignment", "bias mitigation", "fairness", "interpretability"]
+    }
+  ],
   "references": [],
   "publications": [
     {
