@@ -103,8 +103,8 @@ Mintel Group (Remote)
 
 ## Recent News
 
-- **December 2025**: Two papers accepted to AAAI 2026 Workshop on AI for Governance - [Cultural Understanding and Reasoning Evaluation](/publication/2026-cultural-understanding-evaluation) and [Comprehensive Cultural Alignment Framework](/publication/2026-comprehensive-cultural-alignment)
+- **December 2025**: Two papers accepted to AAAI 2026 Workshop on AI for Governance - [Cultural Understanding and Reasoning Evaluation](/publication/2026-cultural-understanding-evaluation) and [Toward Comprehensive Cultural Alignment in LLMs](/publication/2026-comprehensive-cultural-alignment)
 - **November 2025**: Paper accepted to IEEE BigData 2025 - [Gradient Boosting in Image Classification](/publication/2025-gradient-boosting-image-classification)
 - **October 2025**: Paper accepted to ICDM 2025 Workshop on Multimodal AI - [Topic Analysis with Side Information](/publication/2025-topic-analysis-side-information)
 - **September 2025**: Paper accepted to NeurIPS 2025 Workshop on Optimization - [Efficient Training of CNN Ensembles](/publication/2025-efficient-training-cnn-ensembles) 
-- **December 2024**: Paper accepted to IEEE BigData 2024 - [Stochastic Large-Scale Algorithms with Distributed Features](/publication/2024-stochastic-distributed-algorithms)
+- **November 2024**: Paper accepted to IEEE BigData 2024 - [Stochastic Large-Scale Algorithms with Distributed Features](/publication/2024-stochastic-distributed-algorithms)

@@ -5,14 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<!-- Conferences & Workshops -->
 {% if site.publication_category %}
+  {% assign counter = 0 %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
@@ -20,15 +17,30 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <h2 style="text-decoration: underline; font-size: 1.3em; margin-top: 2em;">{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% assign counter = counter | plus: 1 %}
+      <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
+        [{{ counter }}] {{ post.citation | remove: '<i>' | remove: '</i>' | split: '(' | first | strip }}<br/>
+        <a href="{{ post.paperurl }}" style="color: #0000EE;">{{ post.title }}</a><br/>
+        {% if post.venue contains "Under review" %}
+          <em>{{ post.venue }}</em>
+        {% else %}
+          In <strong>{{ post.venue | split: '(' | first | strip }}</strong> {% if post.venue contains '(' %}<em>{{ post.venue | split: '(' | last | split: ')' | first }}</em>{% endif %} ({{ post.date | date: "%Y" }}).
+        {% endif %}
+      </p>
     {% endfor %}
   {% endfor %}
 {% else %}
+  {% assign counter = 0 %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% assign counter = counter | plus: 1 %}
+    <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
+      [{{ counter }}] {{ post.citation | remove: '<i>' | remove: '</i>' | split: '(' | first | strip }}<br/>
+      <a href="{{ post.paperurl }}" style="color: #0000EE;">{{ post.title }}</a><br/>
+      In <strong>{{ post.venue }}</strong> ({{ post.date | date: "%Y" }}).
+    </p>
   {% endfor %}
 {% endif %}
 
