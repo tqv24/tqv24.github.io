@@ -28,7 +28,7 @@ author_profile: true
           {% assign author_list = authors | split: ',' %}
           {% for author in author_list %}
             {% assign author_trim = author | strip %}
-            {% if my_names contains author_trim %}
+            {% if author_trim == "Truong Vo" %}
               <b>{{ author_trim }}</b>{% if forloop.last == false %},{% endif %}
             {% else %}
               {{ author_trim }}{% if forloop.last == false %},{% endif %}
@@ -38,9 +38,7 @@ author_profile: true
         </span>
         <a class="pub-title" href="{{ post.url }}">{{ post.title }}</a>.
         <span class="pub-venue">{{ post.venue }}</span>
-        <div class="pub-buttons">
-          {% if post.paperurl %}<a class="pub-btn" href="{{ post.paperurl }}" target="_blank">PDF</a>{% endif %}
-        </div>
+        <!-- No PDF or Cite buttons -->
       </div>
     {% endfor %}
   {% endfor %}
