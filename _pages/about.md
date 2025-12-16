@@ -14,7 +14,6 @@ My research focuses on developing **trustworthy and reliable large language mode
 - Efficient machine learning algorithms for large-scale model training and adaptation
 
 ---
-
 ## Education
 
 <table style="border:none; border-collapse: collapse; width: 100%;">
@@ -52,7 +51,7 @@ GPA: 3.77/4.0 | Award: <em>Students Tackling Advanced Research Scholars</em>
 <table style="border:none; border-collapse: collapse; width: 100%;">
 <tr style="border:none;">
 <td style="border:none; width: 150px; vertical-align: middle; padding-right: 20px;">
-<img src="/images/stanford-logo.png" alt="Stanford University" width="110"/>
+<img src="/images/stanford-logo.png" alt="Stanford University" width="150"/>
 </td>
 <td style="border:none; vertical-align: middle; font-size: 1.2em;">
 <strong style="font-size: 1.2em;">Visiting Student Researcher</strong> | <em>June 2025 – Present</em><br/>
@@ -64,7 +63,7 @@ Stanford Trustworthy AI Research Lab, Stanford University
 <table style="border:none; border-collapse: collapse; width: 100%; margin-top: 20px;">
 <tr style="border:none;">
 <td style="border:none; width: 150px; vertical-align: middle; padding-right: 20px;">
-<img src="/images/northwestern-logo.png" alt="Northwestern University" width="110"/>
+<img src="/images/northwestern-logo.png" alt="Northwestern University" width="150"/>
 </td>
 <td style="border:none; vertical-align: middle; font-size: 1.2em;">
 <strong style="font-size: 1.2em;">Graduate Research Assistant</strong> | <em>June 2024 – May 2025</em><br/>
