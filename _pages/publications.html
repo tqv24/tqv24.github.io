@@ -21,8 +21,9 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
       {% assign counter = counter | plus: 1 %}
+      {% assign authors = post.citation | split: '(' | first | strip %}
       <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
-        [{{ counter }}] {{ post.citation | remove: '<i>' | remove: '</i>' | split: '(' | first | strip }}<br/>
+        [{{ counter }}] {{ authors }}<br/>
         <a href="{{ post.paperurl }}" style="color: #0000EE;">{{ post.title }}</a><br/>
         {% if post.venue contains "Under review" %}
           <em>{{ post.venue }}</em>
@@ -36,8 +37,9 @@ author_profile: true
   {% assign counter = 0 %}
   {% for post in site.publications reversed %}
     {% assign counter = counter | plus: 1 %}
+    {% assign authors = post.citation | split: '(' | first | strip %}
     <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
-      [{{ counter }}] {{ post.citation | remove: '<i>' | remove: '</i>' | split: '(' | first | strip }}<br/>
+      [{{ counter }}] {{ authors }}<br/>
       <a href="{{ post.paperurl }}" style="color: #0000EE;">{{ post.title }}</a><br/>
       In <strong>{{ post.venue }}</strong> ({{ post.date | date: "%Y" }}).
     </p>

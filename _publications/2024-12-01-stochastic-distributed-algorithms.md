@@ -11,6 +11,3 @@ citation: 'Biyi Fang, Diego Klabjan, and Truong Vo. (2024). Stochastic Large-Sca
 ---
 
 As the size of modern datasets exceeds the disk and memory capacities of a single computer, machine learning practitioners have resorted to parallel and distributed computing. Given that optimization is one of the pillars of machine learning and predictive modeling, distributed optimization methods have recently garnered ample attention, in particular when either observations or features are distributed, but not both. We propose a general stochastic algorithm where observations, features, and gradient components can be sampled in a double distributed setting, i.e., with both features and observations distributed. Very technical analyses establish convergence properties of the algorithm under different conditions on the learning rate (diminishing to zero or constant). Computational experiments in Spark demonstrate a superior performance of our algorithm versus a benchmark in early iterations of the algorithm, which is due to the stochastic components of the algorithm.
-
-
-[Download paper here](https://ieeexplore.ieee.org/abstract/document/10825730/)

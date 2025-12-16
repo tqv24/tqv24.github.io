@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Truong Quang Vo"
   pronouns         : # example: "she/her"  
-  bio              : "M.S. Candidate in Machine Learning & Data Science at Northwestern University"
+  bio              : "M.S. in Machine Learning & Data Science at Northwestern University"
   location         : "Evanston, IL"
   employer         : "Northwestern University"
   uri              : # URL
@@ -84,12 +84,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
   conferences:
-    title: 'Conference Papers'
+    title: 'Conferences & Workshops'
+  manuscripts:
+    title: 'Preprints & Under Review'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

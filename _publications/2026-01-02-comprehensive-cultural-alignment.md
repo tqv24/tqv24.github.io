@@ -11,5 +11,3 @@ citation: 'Truong Vo and Sanmi Koyejo. (2026). Toward Comprehensive Cultural Ali
 ---
 
 Evaluating cultural alignment in large language models (LLMs) requires a nuanced, multidisciplinary understanding of what "culture" entails. In this paper, we draw from anthropology, sociology, political science, and media theory to propose a broader conceptualization of culture as symbolic meaning-making, embodied social practice, negotiated discourse, institutional structure, strategic repertoire, algorithmic mediation, and power-laden representation. We map these conceptual perspectives to representative datasets and propose corresponding evaluation strategies to assess how LLMs handle context sensitivity, temporal change, behavioral norms, and epistemic asymmetries. By grounding evaluation in interdisciplinary cultural theories, we provide a structured framework for the design and development of comprehensive cultural alignment benchmarks for LLMs.
-
-[Download paper here](https://openreview.net/forum?id=bPWyP8am1j)
