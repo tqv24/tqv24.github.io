@@ -86,7 +86,7 @@ Below are my conference presentations and posters. Click on any PDF link to down
         <strong>Tricks and Plug-ins for Gradient Boosting in Image Classification</strong>
       </div>
       <span class="presentation-venue venue-presented">Presented at IEEE BigData 2025</span>
-      <a href="/files/gbm-presentation.pdf" target="_blank" class="pdf-link">📄 Download PDF</a>
+      <a href="/files/gbm-presentation.pdf" target="_blank" class="pdf-link">Download PDF</a>
     </div>
     <div class="pdf-viewer">
       <iframe src="/files/gbm-presentation.pdf" width="100%" height="600px"></iframe>
@@ -99,7 +99,7 @@ Below are my conference presentations and posters. Click on any PDF link to down
         <strong>Efficient Training of CNN Ensembles via Feature-Prioritized Boosting</strong>
       </div>
       <span class="presentation-venue venue-presented">Presented at NeurIPS 2025 Workshop on Optimization</span>
-      <a href="/files/NeurIPS_OPT_Poster.pdf" target="_blank" class="pdf-link">📄 Download PDF</a>
+      <a href="/files/NeurIPS_OPT_Poster.pdf" target="_blank" class="pdf-link">Download PDF</a>
     </div>
     <div class="pdf-viewer">
       <iframe src="/files/NeurIPS_OPT_Poster.pdf" width="100%" height="600px"></iframe>
@@ -112,7 +112,7 @@ Below are my conference presentations and posters. Click on any PDF link to down
         <strong>Stochastic Large-Scale Machine Learning Algorithms with Distributed Features and Observations</strong>
       </div>
       <span class="presentation-venue venue-presented">Presented at IEEE BigData 2024</span>
-      <a href="/files/sodda-presentation.pdf" target="_blank" class="pdf-link">📄 Download PDF</a>
+      <a href="/files/sodda-presentation.pdf" target="_blank" class="pdf-link">Download PDF</a>
     </div>
     <div class="pdf-viewer">
       <iframe src="/files/sodda-presentation.pdf" width="100%" height="600px"></iframe>
@@ -128,7 +128,7 @@ Below are my conference presentations and posters. Click on any PDF link to down
         A Framework for 'Thick' Culture Alignment Evaluation in LLMs
       </div>
       <span class="presentation-venue venue-upcoming">To be presented at AAAI 2026 Workshop on AI for Governance</span>
-      <a href="/files/CUREBench.pdf" target="_blank" class="pdf-link">📄 Download PDF</a>
+      <a href="/files/CUREBench.pdf" target="_blank" class="pdf-link">Download PDF</a>
     </div>
     <div class="pdf-viewer">
       <iframe src="/files/CUREBench.pdf" width="100%" height="600px"></iframe>
@@ -141,7 +141,7 @@ Below are my conference presentations and posters. Click on any PDF link to down
         <strong>Synthetic Clinical Data Generation for Training Robust ICD Coding Models</strong>
       </div>
       <span class="presentation-venue venue-review">Under review at ACL 2026</span>
-      <a href="/files/SynICD.pdf" target="_blank" class="pdf-link">📄 Download PDF</a>
+      <a href="/files/SynICD.pdf" target="_blank" class="pdf-link">Download PDF</a>
     </div>
     <div class="pdf-viewer">
       <iframe src="/files/SynICD.pdf" width="100%" height="600px"></iframe>
