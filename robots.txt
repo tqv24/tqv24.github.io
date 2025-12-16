@@ -1,3 +1,7 @@
+---
+permalink: /robots.txt
+---
 User-agent: *
+Disallow:
 
-Sitemap: https://martinakaduc.github.io/sitemap.xml
+Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
