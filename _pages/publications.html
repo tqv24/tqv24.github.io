@@ -24,7 +24,7 @@ author_profile: true
       {% assign authors = post.citation | split: '(' | first | strip %}
       <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
         [{{ counter }}] {{ authors }}<br/>
-        <a href="{{ post.url }}" style="color: #0000EE;">{{ post.title }}</a><br/>
+        <a href="{{ post.url }}" style="color: #52B5E5;">{{ post.title }}</a><br/>
         {% if post.venue contains "Under review" %}
           <em>{{ post.venue }}</em>
         {% else %}
@@ -40,7 +40,7 @@ author_profile: true
     {% assign authors = post.citation | split: '(' | first | strip %}
     <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
       [{{ counter }}] {{ authors }}<br/>
-      <a href="{{ post.url }}" style="color: #0000EE;">{{ post.title }}</a><br/>
+      <a href="{{ post.url }}" style="color: #52B5E5;">{{ post.title }}</a><br/>
       In <strong>{{ post.venue }}</strong> ({{ post.date | date: "%Y" }}).
     </p>
   {% endfor %}
