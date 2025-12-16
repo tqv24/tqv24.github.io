@@ -23,7 +23,7 @@ author_profile: true
       {% assign counter = counter | plus: 1 %}
       {% assign authors = post.citation | split: '(' | first | strip %}
       <div class="pub-entry">
-        <div class="pub-authors">
+        <span class="pub-authors">
           <i class="fa fa-file-text-o" aria-hidden="true"></i>
           {% assign author_list = authors | split: ',' %}
           {% for author in author_list %}
@@ -35,9 +35,9 @@ author_profile: true
             {% endif %}
           {% endfor %}
           ({{ post.date | date: "%Y" }})
-        </div>
+        </span>
         <a class="pub-title" href="{{ post.url }}">{{ post.title }}</a>.
-        <div class="pub-venue">{{ post.venue }}</div>
+        <span class="pub-venue">{{ post.venue }}</span>
         <div class="pub-buttons">
           {% if post.paperurl %}<a class="pub-btn" href="{{ post.paperurl }}" target="_blank">PDF</a>{% endif %}
           {% if post.bibtexurl %}<a class="pub-btn" href="{{ post.bibtexurl }}" target="_blank">Cite</a>{% endif %}

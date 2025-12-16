@@ -6,7 +6,7 @@ permalink: /publication/2026-cultural-understanding-evaluation
 excerpt: 'CURE requires LLMs to explain cultural judgments across 145 countries, revealing models achieving 75–82% accuracy fail when justifying reasoning, proving current benchmarks overestimate cultural competence through pattern matching vs understanding.'
 date: 2026-01-01
 venue: 'AAAI 2026 Workshop on AI for Governance'
-paperurl: 'https://openreview.net/forum?id=c4a4wEo1K5'
+paperurl: 'https://openreview.net/pdf?id=c4a4wEo1K5'
 citation: 'Truong Vo and Sanmi Koyejo. (2026). CURE: Cultural Understanding & Reasoning Evaluation - A Framework for "Thick" Culture Alignment Evaluation in LLMs. <i>AAAI 2026 Workshop on AI for Governance</i>.'
 ---
 
