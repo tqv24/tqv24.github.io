@@ -19,11 +19,11 @@ My research focuses on developing **trustworthy and reliable large language mode
 
 <table style="border:none; border-collapse: collapse; width: 100%;">
 <tr style="border:none;">
-<td style="border:none; width: 120px; vertical-align: middle; padding-right: 20px;">
+<td style="border:none; width: 145px; vertical-align: middle; padding-right: 20px;">
 <img src="/images/northwestern-logo.png" alt="Northwestern University" width="120"/>
 </td>
-<td style="border:none; vertical-align: middle; font-size: 1.1em;">
-<strong style="font-size: 1.1em;">Northwestern University</strong> | <em>Evanston, IL</em><br/>
+<td style="border:none; vertical-align: middle; font-size: 1.2em;">
+<strong style="font-size: 1.2em;">Northwestern University</strong> | <em>Evanston, IL</em><br/>
 M.S. in Machine Learning and Data Science (Expected: December 2025)<br/>
 GPA: 3.98/4.0
 </td>
