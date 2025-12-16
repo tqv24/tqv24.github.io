@@ -22,15 +22,27 @@ author_profile: true
       {% endunless %}
       {% assign counter = counter | plus: 1 %}
       {% assign authors = post.citation | split: '(' | first | strip %}
-      <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
-        [{{ counter }}] {{ authors }}<br/>
-        <a href="{{ post.url }}" style="color: #52B5E5;">{{ post.title }}</a><br/>
-        {% if post.venue contains "Under review" %}
-          <em>{{ post.venue }}</em>
-        {% else %}
-          In <strong>{{ post.venue | split: '(' | first | strip }}</strong> {% if post.venue contains '(' %}<em>{{ post.venue | split: '(' | last | split: ')' | first }}</em>{% endif %} ({{ post.date | date: "%Y" }}).
-        {% endif %}
-      </p>
+      <div class="pub-entry">
+        <div class="pub-authors">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          {% assign author_list = authors | split: ',' %}
+          {% for author in author_list %}
+            {% assign author_trim = author | strip %}
+            {% if my_names contains author_trim %}
+              <b>{{ author_trim }}</b>{% if forloop.last == false %},{% endif %}
+            {% else %}
+              {{ author_trim }}{% if forloop.last == false %},{% endif %}
+            {% endif %}
+          {% endfor %}
+          ({{ post.date | date: "%Y" }})
+        </div>
+        <a class="pub-title" href="{{ post.url }}">{{ post.title }}</a>.
+        <div class="pub-venue">{{ post.venue }}</div>
+        <div class="pub-buttons">
+          {% if post.paperurl %}<a class="pub-btn" href="{{ post.paperurl }}" target="_blank">PDF</a>{% endif %}
+          {% if post.bibtexurl %}<a class="pub-btn" href="{{ post.bibtexurl }}" target="_blank">Cite</a>{% endif %}
+        </div>
+      </div>
     {% endfor %}
   {% endfor %}
 {% else %}
@@ -45,6 +57,48 @@ author_profile: true
     </p>
   {% endfor %}
 {% endif %}
+
+<style>
+.pub-authors {
+  font-size: 1.05em;
+  margin-bottom: 0.2em;
+}
+.pub-title {
+  color: #2196f3;
+  font-size: 1.13em;
+  font-weight: 500;
+  text-decoration: none;
+}
+.pub-venue {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 0.3em;
+}
+.pub-buttons {
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+}
+.pub-btn {
+  background: #f5f5f5;
+  border: 1px solid #bdbdbd;
+  color: #2196f3;
+  border-radius: 5px;
+  padding: 2px 12px;
+  font-size: 0.98em;
+  margin-right: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.pub-btn:hover {
+  background: #e3f2fd;
+}
+.pub-entry {
+  margin-bottom: 1.5em;
+}
+</style>
+
+{% assign my_names = "Truong Vo, Vo Truong Quang, Truong Quang Vo, Vo, T. Q., T. Q. Vo, Truong Q. Vo, Vo, Truong Q." | split: ", " %}
 
 
 
