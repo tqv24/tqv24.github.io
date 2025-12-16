@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 I am a Master's student in Machine Learning and Data Science at Northwestern University (expected graduation: December 2025) and a Visiting Student Researcher at Stanford's Trustworthy AI Research Lab, working with Professor Sanmi Koyejo.
 
 My research focuses on developing **trustworthy and reliable large language models**, with particular interests in:
@@ -104,6 +103,8 @@ Mintel Group (Remote)
 
 ## Recent News
 
-- **December 2025**: Two papers accepted to AAAI 2026 Workshop on AI for Governance
-- **November 2024**: Paper accepted to IEEE BigData 2025
-- **October 2024**: Paper accepted to ICDM 2025 Workshop on Multimodal AI
+- **December 2025**: Two papers accepted to AAAI 2026 Workshop on AI for Governance - [Cultural Understanding and Reasoning Evaluation](/publication/2026-cultural-understanding-evaluation) and [Comprehensive Cultural Alignment Framework](/publication/2026-comprehensive-cultural-alignment)
+- **November 2025**: Paper accepted to IEEE BigData 2025 - [Gradient Boosting in Image Classification](/publication/2025-gradient-boosting-image-classification)
+- **October 2025**: Paper accepted to ICDM 2025 Workshop on Multimodal AI - [Topic Analysis with Side Information](/publication/2025-topic-analysis-side-information)
+- **September 2025**: Paper accepted to NeurIPS 2025 Workshop on Optimization - [Efficient Training of CNN Ensembles](/publication/2025-efficient-training-cnn-ensembles) 
+- **December 2024**: Paper accepted to IEEE BigData 2024 - [Stochastic Large-Scale Algorithms with Distributed Features](/publication/2024-stochastic-distributed-algorithms)
