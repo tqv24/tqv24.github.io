@@ -19,12 +19,12 @@ My research focuses on developing **trustworthy and reliable large language mode
 
 <table style="border:none; border-collapse: collapse; width: 100%;">
 <tr style="border:none;">
-<td style="border:none; width: 145px; vertical-align: middle; padding-right: 20px;">
-<img src="/images/northwestern-logo.png" alt="Northwestern University" width="120"/>
+<td style="border:none; width: 150px; vertical-align: middle; padding-right: 20px;">
+<img src="/images/northwestern-logo.png" alt="Northwestern University" width="150"/>
 </td>
 <td style="border:none; vertical-align: middle; font-size: 1.2em;">
 <strong style="font-size: 1.2em;">Northwestern University</strong> | <em>Evanston, IL</em><br/>
-M.S. in Machine Learning and Data Science (Expected: December 2025)<br/>
+M.S. in Machine Learning and Data Science (December 2025)<br/>
 GPA: 3.98/4.0
 </td>
 </tr>
@@ -32,11 +32,11 @@ GPA: 3.98/4.0
 
 <table style="border:none; border-collapse: collapse; width: 100%; margin-top: 20px;">
 <tr style="border:none;">
-<td style="border:none; width: 110px; vertical-align: middle; padding-right: 20px;">
-<img src="/images/drexel-logo.png" alt="Drexel University" width="110"/>
+<td style="border:none; width: 150px; vertical-align: middle; padding-right: 20px;">
+<img src="/images/drexel-logo.png" alt="Drexel University" width="150"/>
 </td>
-<td style="border:none; vertical-align: middle; font-size: 1.em;">
-<strong style="font-size: 1.em;">Drexel University</strong> | <em>Philadelphia, PA</em><br/>
+<td style="border:none; vertical-align: middle; font-size: 1.2em;">
+<strong style="font-size: 1.2em;">Drexel University</strong> | <em>Philadelphia, PA</em><br/>
 B.S. in Chemical Engineering (September 2023)<br/>
 GPA: 3.77/4.0 | Award: <em>Students Tackling Advanced Research Scholars</em>
 </td>
