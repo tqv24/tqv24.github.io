@@ -20,11 +20,11 @@ My research focuses on developing **trustworthy and reliable large language mode
 
 <table style="border:none; border-collapse: collapse; width: 100%;">
 <tr style="border:none;">
-<td style="border:none; width: 90px; vertical-align: top; padding-right: 20px;">
-<img src="/images/northwestern-logo.png" alt="Northwestern University" width="90"/>
+<td style="border:none; width: 110px; vertical-align: top; padding-right: 20px;">
+<img src="/images/northwestern-logo.png" alt="Northwestern University" width="110"/>
 </td>
-<td style="border:none; vertical-align: top; font-size: 1.1em;">
-<strong style="font-size: 1.15em;">Northwestern University</strong> | <em>Evanston, IL</em><br/>
+<td style="border:none; vertical-align: top; font-size: 1.15em;">
+<strong style="font-size: 1.2em;">Northwestern University</strong> | <em>Evanston, IL</em><br/>
 M.S. in Machine Learning and Data Science (Expected: December 2025)<br/>
 GPA: 3.98/4.0
 </td>
@@ -33,11 +33,11 @@ GPA: 3.98/4.0
 
 <table style="border:none; border-collapse: collapse; width: 100%; margin-top: 20px;">
 <tr style="border:none;">
-<td style="border:none; width: 90px; vertical-align: top; padding-right: 20px;">
-<img src="/images/drexel-logo.png" alt="Drexel University" width="90"/>
+<td style="border:none; width: 110px; vertical-align: top; padding-right: 20px;">
+<img src="/images/drexel-logo.png" alt="Drexel University" width="110"/>
 </td>
-<td style="border:none; vertical-align: top; font-size: 1.1em;">
-<strong style="font-size: 1.15em;">Drexel University</strong> | <em>Philadelphia, PA</em><br/>
+<td style="border:none; vertical-align: top; font-size: 1.15em;">
+<strong style="font-size: 1.2em;">Drexel University</strong> | <em>Philadelphia, PA</em><br/>
 B.S. in Chemical Engineering (September 2023)<br/>
 GPA: 3.77/4.0 | Award: <em>Students Tackling Advanced Research Scholars</em>
 </td>
@@ -52,11 +52,11 @@ GPA: 3.77/4.0 | Award: <em>Students Tackling Advanced Research Scholars</em>
 
 <table style="border:none; border-collapse: collapse; width: 100%;">
 <tr style="border:none;">
-<td style="border:none; width: 90px; vertical-align: top; padding-right: 20px;">
-<img src="/images/stanford-logo.png" alt="Stanford University" width="90"/>
+<td style="border:none; width: 110px; vertical-align: top; padding-right: 20px;">
+<img src="/images/stanford-logo.png" alt="Stanford University" width="110"/>
 </td>
-<td style="border:none; vertical-align: top; font-size: 1.1em;">
-<strong style="font-size: 1.15em;">Visiting Student Researcher</strong> | <em>June 2025 – Present</em><br/>
+<td style="border:none; vertical-align: top; font-size: 1.15em;">
+<strong style="font-size: 1.2em;">Visiting Student Researcher</strong> | <em>June 2025 – Present</em><br/>
 Stanford Trustworthy AI Research Lab, Stanford University
 </td>
 </tr>
@@ -64,11 +64,11 @@ Stanford Trustworthy AI Research Lab, Stanford University
 
 <table style="border:none; border-collapse: collapse; width: 100%; margin-top: 20px;">
 <tr style="border:none;">
-<td style="border:none; width: 90px; vertical-align: top; padding-right: 20px;">
-<img src="/images/northwestern-logo.png" alt="Northwestern University" width="90"/>
+<td style="border:none; width: 110px; vertical-align: top; padding-right: 20px;">
+<img src="/images/northwestern-logo.png" alt="Northwestern University" width="110"/>
 </td>
-<td style="border:none; vertical-align: top; font-size: 1.1em;">
-<strong style="font-size: 1.15em;">Graduate Research Assistant</strong> | <em>June 2024 – May 2025</em><br/>
+<td style="border:none; vertical-align: top; font-size: 1.15em;">
+<strong style="font-size: 1.2em;">Graduate Research Assistant</strong> | <em>June 2024 – May 2025</em><br/>
 Center for Deep Learning, Northwestern University
 </td>
 </tr>
@@ -78,11 +78,11 @@ Center for Deep Learning, Northwestern University
 
 <table style="border:none; border-collapse: collapse; width: 100%; margin-top: 20px;">
 <tr style="border:none;">
-<td style="border:none; width: 90px; vertical-align: top; padding-right: 20px;">
-<img src="/images/sabre-logo.png" alt="Sabre Holdings" width="90"/>
+<td style="border:none; width: 110px; vertical-align: top; padding-right: 20px;">
+<img src="/images/sabre-logo.png" alt="Sabre Holdings" width="110"/>
 </td>
-<td style="border:none; vertical-align: top; font-size: 1.1em;">
-<strong style="font-size: 1.15em;">AI Engineer Intern</strong> | <em>September 2025 – Present</em><br/>
+<td style="border:none; vertical-align: top; font-size: 1.15em;">
+<strong style="font-size: 1.2em;">AI Engineer Intern</strong> | <em>September 2025 – Present</em><br/>
 Sabre Holdings (Remote)
 </td>
 </tr>
@@ -90,11 +90,11 @@ Sabre Holdings (Remote)
 
 <table style="border:none; border-collapse: collapse; width: 100%; margin-top: 20px;">
 <tr style="border:none;">
-<td style="border:none; width: 90px; vertical-align: top; padding-right: 20px;">
-<img src="/images/mintel-logo.png" alt="Mintel Group" width="90"/>
+<td style="border:none; width: 110px; vertical-align: top; padding-right: 20px;">
+<img src="/images/mintel-logo.png" alt="Mintel Group" width="110"/>
 </td>
-<td style="border:none; vertical-align: top; font-size: 1.1em;">
-<strong style="font-size: 1.15em;">Applied AI Intern</strong> | <em>September 2024 – May 2025</em><br/>
+<td style="border:none; vertical-align: top; font-size: 1.15em;">
+<strong style="font-size: 1.2em;">Applied AI Intern</strong> | <em>September 2024 – May 2025</em><br/>
 Mintel Group (Remote)
 </td>
 </tr>
