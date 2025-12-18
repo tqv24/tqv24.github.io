@@ -27,9 +27,22 @@ author_profile: true
           <i class="fa fa-file-text-o" aria-hidden="true"></i>
           {% assign author_list = authors | split: ',' %}
           {% for author in author_list %}
-            {% assign author_trim = author | strip | remove: '.' | downcase %}
-            {% if author_trim == "truong vo" or author_trim == "vo truong" %}
-              <b>{{ author | strip }}</b>{% if forloop.last == false %},{% endif %}
+            {% assign author_clean = author | strip | replace: ' and ', ', ' | remove: '.' | downcase %}
+            {% if author_clean contains "truong vo" %}
+              {% assign original_author = author | strip %}
+              {% if original_author contains " and " %}
+                {% assign parts = original_author | split: " and " %}
+                {% for part in parts %}
+                  {% assign part_clean = part | strip | remove: '.' | downcase %}
+                  {% if part_clean == "truong vo" %}
+                    {% if forloop.first == false %} and {% endif %}<b>{{ part | strip }}</b>
+                  {% else %}
+                    {% if forloop.first == false %} and {% endif %}{{ part | strip }}
+                  {% endif %}
+                {% endfor %}{% if forloop.last == false %},{% endif %}
+              {% else %}
+                <b>{{ original_author }}</b>{% if forloop.last == false %},{% endif %}
+              {% endif %}
             {% else %}
               {{ author | strip }}{% if forloop.last == false %},{% endif %}
             {% endif %}
@@ -51,9 +64,22 @@ author_profile: true
       [{{ counter }}]
       {% assign author_list = authors | split: ',' %}
       {% for author in author_list %}
-        {% assign author_trim = author | strip | remove: '.' | downcase %}
-        {% if author_trim == "truong vo" or author_trim == "vo truong" %}
-          <b>{{ author | strip }}</b>{% if forloop.last == false %},{% endif %}
+        {% assign author_clean = author | strip | replace: ' and ', ', ' | remove: '.' | downcase %}
+        {% if author_clean contains "truong vo" %}
+          {% assign original_author = author | strip %}
+          {% if original_author contains " and " %}
+            {% assign parts = original_author | split: " and " %}
+            {% for part in parts %}
+              {% assign part_clean = part | strip | remove: '.' | downcase %}
+              {% if part_clean == "truong vo" %}
+                {% if forloop.first == false %} and {% endif %}<b>{{ part | strip }}</b>
+              {% else %}
+                {% if forloop.first == false %} and {% endif %}{{ part | strip }}
+              {% endif %}
+            {% endfor %}{% if forloop.last == false %},{% endif %}
+          {% else %}
+            <b>{{ original_author }}</b>{% if forloop.last == false %},{% endif %}
+          {% endif %}
         {% else %}
           {{ author | strip }}{% if forloop.last == false %},{% endif %}
         {% endif %}
