@@ -48,7 +48,16 @@ author_profile: true
     {% assign counter = counter | plus: 1 %}
     {% assign authors = post.citation | split: '(' | first | strip %}
     <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
-      [{{ counter }}] {{ authors }}<br/>
+      [{{ counter }}]
+      {% assign author_list = authors | split: ',' %}
+      {% for author in author_list %}
+        {% assign author_trim = author | strip %}
+        {% if author_trim == "Truong Vo" %}
+          <b>{{ author_trim }}</b>{% if forloop.last == false %},{% endif %}
+        {% else %}
+          {{ author_trim }}{% if forloop.last == false %},{% endif %}
+        {% endif %}
+      {% endfor %}<br/>
       <a href="{{ post.url }}" style="color: #52B5E5;">{{ post.title }}</a><br/>
       In <strong>{{ post.venue }}</strong> ({{ post.date | date: "%Y" }}).
     </p>
