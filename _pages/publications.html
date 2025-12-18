@@ -31,11 +31,12 @@ author_profile: true
             {% if author_work contains " and " %}
               {% assign parts = author_work | split: " and " %}
               {% for part in parts %}
+                {% if forloop.first == false %}and {% endif %}
                 {% assign part_test = part | strip | downcase %}
                 {% if part_test contains "truong" and part_test contains "vo" %}
-                  {% if forloop.first == false %}and {% endif %}<b>{{ part | strip }}</b>
+                  <b>{{ part | strip }}</b>
                 {% else %}
-                  {% if forloop.first == false %}and {% endif %}{{ part | strip }}
+                  {{ part | strip }}
                 {% endif %}
               {% endfor %}{% if forloop.last == false %},{% endif %}
             {% else %}
@@ -68,11 +69,12 @@ author_profile: true
         {% if author_work contains " and " %}
           {% assign parts = author_work | split: " and " %}
           {% for part in parts %}
+            {% if forloop.first == false %}and {% endif %}
             {% assign part_test = part | strip | downcase %}
             {% if part_test contains "truong" and part_test contains "vo" %}
-              {% if forloop.first == false %}and {% endif %}<b>{{ part | strip }}</b>
+              <b>{{ part | strip }}</b>
             {% else %}
-              {% if forloop.first == false %}and {% endif %}{{ part | strip }}
+              {{ part | strip }}
             {% endif %}
           {% endfor %}{% if forloop.last == false %},{% endif %}
         {% else %}
