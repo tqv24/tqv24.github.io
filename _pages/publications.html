@@ -31,7 +31,7 @@ author_profile: true
             {% if author_work contains " and " %}
               {% assign parts = author_work | split: " and " %}
               {% for part in parts %}
-                {% assign part_clean = part | strip | remove: '.' | downcase | strip %}
+                {% assign part_clean = part | strip | remove: '.' | remove: ',' | downcase | strip %}
                 {% if forloop.first == false %} and {% endif %}
                 {% if part_clean == "truong vo" %}
                   <b>{{ part | strip }}</b>
@@ -40,7 +40,7 @@ author_profile: true
                 {% endif %}
               {% endfor %}{% if forloop.last == false %},{% endif %}
             {% else %}
-              {% assign author_clean = author_work | remove: '.' | downcase | strip %}
+              {% assign author_clean = author_work | remove: '.' | remove: ',' | downcase | strip %}
               {% if author_clean == "truong vo" %}
                 <b>{{ author_work }}</b>{% if forloop.last == false %},{% endif %}
               {% else %}
@@ -69,7 +69,7 @@ author_profile: true
         {% if author_work contains " and " %}
           {% assign parts = author_work | split: " and " %}
           {% for part in parts %}
-            {% assign part_clean = part | strip | remove: '.' | downcase | strip %}
+            {% assign part_clean = part | strip | remove: '.' | remove: ',' | downcase | strip %}
             {% if forloop.first == false %} and {% endif %}
             {% if part_clean == "truong vo" %}
               <b>{{ part | strip }}</b>
@@ -78,7 +78,7 @@ author_profile: true
             {% endif %}
           {% endfor %}{% if forloop.last == false %},{% endif %}
         {% else %}
-          {% assign author_clean = author_work | remove: '.' | downcase | strip %}
+          {% assign author_clean = author_work | remove: '.' | remove: ',' | downcase | strip %}
           {% if author_clean == "truong vo" %}
             <b>{{ author_work }}</b>{% if forloop.last == false %},{% endif %}
           {% else %}
