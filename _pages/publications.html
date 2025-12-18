@@ -33,9 +33,9 @@ author_profile: true
               {% for part in parts %}
                 {% assign part_clean = part | strip | remove: '.' | downcase %}
                 {% if part_clean == "truong vo" %}
-                  {% if forloop.first == false %}and {% endif %}<b>{{ part | strip }}</b>
+                  {% if forloop.first == false %} and {% endif %}<b>{{ part | strip }}</b>
                 {% else %}
-                  {% if forloop.first == false %}and {% endif %}{{ part | strip }}
+                  {% if forloop.first == false %} and {% endif %}{{ part | strip }}
                 {% endif %}
               {% endfor %}{% if forloop.last == false %},{% endif %}
             {% else %}
@@ -70,9 +70,9 @@ author_profile: true
           {% for part in parts %}
             {% assign part_clean = part | strip | remove: '.' | downcase %}
             {% if part_clean == "truong vo" %}
-              {% if forloop.first == false %}and {% endif %}<b>{{ part | strip }}</b>
+              {% if forloop.first == false %} and {% endif %}<b>{{ part | strip }}</b>
             {% else %}
-              {% if forloop.first == false %}and {% endif %}{{ part | strip }}
+              {% if forloop.first == false %} and {% endif %}{{ part | strip }}
             {% endif %}
           {% endfor %}{% if forloop.last == false %},{% endif %}
         {% else %}
