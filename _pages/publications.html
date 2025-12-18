@@ -7,39 +7,32 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Conferences & Workshops -->
 {% if site.publication_category %}
   {% assign counter = 0 %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2 style="text-decoration: underline; font-size: 1.3em; margin-top: 2em;">{{ category[1].title }}</h2>
-        {% assign title_shown = true %}
+__{{ category[1].title }}__
+      {% assign title_shown = true %}
       {% endunless %}
       {% assign counter = counter | plus: 1 %}
       {% assign authors = post.citation | split: '(' | first | strip %}
-      <div class="pub-entry">
-        <span class="pub-authors">
-          <i class="fa fa-file-text-o" aria-hidden="true"></i>
-          {% assign author_list = authors | split: ',' %}
-          {% for author in author_list %}
-            {% assign author_trim = author | strip | remove: '.' %}
-            {% if author_trim == "Truong Vo" %}
-              <b>{{ author | strip }}</b>{% if forloop.last == false %},{% endif %}
-            {% else %}
-              {{ author | strip }}{% if forloop.last == false %},{% endif %}
-            {% endif %}
-          {% endfor %}
-          ({{ post.date | date: "%Y" }})
-        </span>
-        <a class="pub-title" href="{{ post.url }}">{{ post.title }}</a>.
-        <span class="pub-venue">{{ post.venue }}</span>
-        <!-- No PDF or Cite buttons -->
-      </div>
+<p>
+      {% assign author_list = authors | split: ',' %}
+      {% for author in author_list %}
+        {% assign author_clean = author | strip | remove: '.' | downcase %}
+        {% if author_clean contains "truong" and author_clean contains "vo" %}
+<strong>{{ author | strip }}</strong>{% if forloop.last == false %},{% endif %}
+        {% else %}
+{{ author | strip }}{% if forloop.last == false %},{% endif %}
+        {% endif %}
+      {% endfor %}
+({{ post.date | date: "%Y" }}) {{ post.title }}. {{ post.venue }}
+</p>
     {% endfor %}
   {% endfor %}
 {% else %}
@@ -47,64 +40,18 @@ author_profile: true
   {% for post in site.publications reversed %}
     {% assign counter = counter | plus: 1 %}
     {% assign authors = post.citation | split: '(' | first | strip %}
-    <p style="margin-top: 1.2em; margin-bottom: 0.5em; line-height: 1.6;">
-      [{{ counter }}]
-      {% assign author_list = authors | split: ',' %}
-      {% for author in author_list %}
-        {% assign author_trim = author | strip | remove: '.' %}
-        {% if author_trim == "Truong Vo" %}
-          <b>{{ author | strip }}</b>{% if forloop.last == false %},{% endif %}
-        {% else %}
-          {{ author | strip }}{% if forloop.last == false %},{% endif %}
-        {% endif %}
-      {% endfor %}<br/>
-      <a href="{{ post.url }}" style="color: #52B5E5;">{{ post.title }}</a><br/>
-      In <strong>{{ post.venue }}</strong> ({{ post.date | date: "%Y" }}).
-    </p>
+<p>
+[{{ counter }}] 
+    {% assign author_list = authors | split: ',' %}
+    {% for author in author_list %}
+      {% assign author_clean = author | strip | remove: '.' | downcase %}
+      {% if author_clean contains "truong" and author_clean contains "vo" %}
+<strong>{{ author | strip }}</strong>{% if forloop.last == false %},{% endif %}
+      {% else %}
+{{ author | strip }}{% if forloop.last == false %},{% endif %}
+      {% endif %}
+    {% endfor %}
+{{ post.title }} In {{ post.venue }} ({{ post.date | date: "%Y" }}).
+</p>
   {% endfor %}
 {% endif %}
-
-<style>
-.pub-authors {
-  font-size: 1.05em;
-  margin-bottom: 0.2em;
-}
-.pub-title {
-  color: #2196f3;
-  font-size: 1.13em;
-  font-weight: 500;
-  text-decoration: none !important;
-}
-.pub-venue {
-  font-size: 1em;
-  color: #444;
-  margin-bottom: 0.3em;
-}
-.pub-buttons {
-  margin-top: 0.3em;
-  margin-bottom: 1.1em;
-}
-.pub-btn {
-  background: #f5f5f5;
-  border: 1px solid #bdbdbd;
-  color: #2196f3;
-  border-radius: 5px;
-  padding: 2px 12px;
-  font-size: 0.98em;
-  margin-right: 7px;
-  cursor: pointer;
-  text-decoration: none !important;
-  transition: background 0.2s;
-}
-.pub-btn:hover {
-  background: #e3f2fd;
-}
-.pub-entry {
-  margin-bottom: 1.5em;
-}
-</style>
-
-{% assign my_names = "Truong Vo" | split: ", " %}
-
-
-
