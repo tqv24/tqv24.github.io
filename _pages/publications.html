@@ -31,17 +31,17 @@ author_profile: true
             {% if author_work contains " and " %}
               {% assign parts = author_work | split: " and " %}
               {% for part in parts %}
-                {% assign part_clean = part | strip | remove: '.' | remove: ',' | downcase | strip %}
                 {% if forloop.first == false %} and {% endif %}
-                {% if part_clean == "truong vo" %}
+                {% assign part_test = part | strip | downcase %}
+                {% if part_test contains "truong" and part_test contains "vo" %}
                   <b>{{ part | strip }}</b>
                 {% else %}
                   {{ part | strip }}
                 {% endif %}
               {% endfor %}{% if forloop.last == false %},{% endif %}
             {% else %}
-              {% assign author_clean = author_work | remove: '.' | remove: ',' | downcase | strip %}
-              {% if author_clean == "truong vo" %}
+              {% assign author_test = author_work | downcase %}
+              {% if author_test contains "truong" and author_test contains "vo" %}
                 <b>{{ author_work }}</b>{% if forloop.last == false %},{% endif %}
               {% else %}
                 {{ author_work }}{% if forloop.last == false %},{% endif %}
@@ -69,17 +69,17 @@ author_profile: true
         {% if author_work contains " and " %}
           {% assign parts = author_work | split: " and " %}
           {% for part in parts %}
-            {% assign part_clean = part | strip | remove: '.' | remove: ',' | downcase | strip %}
             {% if forloop.first == false %} and {% endif %}
-            {% if part_clean == "truong vo" %}
+            {% assign part_test = part | strip | downcase %}
+            {% if part_test contains "truong" and part_test contains "vo" %}
               <b>{{ part | strip }}</b>
             {% else %}
               {{ part | strip }}
             {% endif %}
           {% endfor %}{% if forloop.last == false %},{% endif %}
         {% else %}
-          {% assign author_clean = author_work | remove: '.' | remove: ',' | downcase | strip %}
-          {% if author_clean == "truong vo" %}
+          {% assign author_test = author_work | downcase %}
+          {% if author_test contains "truong" and author_test contains "vo" %}
             <b>{{ author_work }}</b>{% if forloop.last == false %},{% endif %}
           {% else %}
             {{ author_work }}{% if forloop.last == false %},{% endif %}
