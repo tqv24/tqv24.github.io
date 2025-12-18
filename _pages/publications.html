@@ -27,11 +27,11 @@ author_profile: true
           <i class="fa fa-file-text-o" aria-hidden="true"></i>
           {% assign author_list = authors | split: ',' %}
           {% for author in author_list %}
-              {% assign author_trim = author | strip %} 
-              {% if author_trim == "Truong Vo" %} 
-                <b>{{ author_trim }}</b>{% if forloop.last == false %},{% endif %} 
+            {% assign author_trim = author | strip | remove: '.' %}
+            {% if author_trim == "Truong Vo" %}
+              <b>{{ author | strip }}</b>{% if forloop.last == false %},{% endif %}
             {% else %}
-              {{ author_trim }}{% if forloop.last == false %},{% endif %}
+              {{ author | strip }}{% if forloop.last == false %},{% endif %}
             {% endif %}
           {% endfor %}
           ({{ post.date | date: "%Y" }})
@@ -51,11 +51,11 @@ author_profile: true
       [{{ counter }}]
       {% assign author_list = authors | split: ',' %}
       {% for author in author_list %}
-        {% assign author_trim = author | strip %}
+        {% assign author_trim = author | strip | remove: '.' %}
         {% if author_trim == "Truong Vo" %}
-          <b>{{ author_trim }}</b>{% if forloop.last == false %},{% endif %}
+          <b>{{ author | strip }}</b>{% if forloop.last == false %},{% endif %}
         {% else %}
-          {{ author_trim }}{% if forloop.last == false %},{% endif %}
+          {{ author | strip }}{% if forloop.last == false %},{% endif %}
         {% endif %}
       {% endfor %}<br/>
       <a href="{{ post.url }}" style="color: #52B5E5;">{{ post.title }}</a><br/>
